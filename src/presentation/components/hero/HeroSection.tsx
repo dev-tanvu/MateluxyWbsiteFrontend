@@ -4,40 +4,40 @@ import { Box, Text, Stack, Flex } from '@frooxi-labs/adaptive-ui';
 import Image from 'next/image';
 import { useState } from 'react';
 
-const Navbar = () => (
-    <Box as="nav" className="absolute top-0 z-50 w-full">
-        <Flex className="flex justify-between items-center py-6 w-full">
-            {/* Logo Area */}
-            <Box className="ml-4 md:ml-[58px]">
-                <Image src="/Logo.svg" alt="Mateluxy Real Estate" width={180} height={50} />
-            </Box>
+// const Navbar = () => (
+//     <Box as="nav" className="absolute top-0 z-50 w-full">
+//         <Flex className="flex justify-between items-center py-6 w-full">
+//             {/* Logo Area */}
+//             <Box className="ml-4 md:ml-[58px]">
+//                 <Image src="/Logo.svg" alt="Mateluxy Real Estate" width={180} height={50} />
+//             </Box>
 
-            {/* Center Links - Desktop Only */}
-            <Box className="hidden lg:block">
-                <Flex className="flex w-[647px] h-[54px] bg-white/40 backdrop-blur-sm rounded-[30px] px-[28px] gap-[34px] items-center justify-center">
-                    {['Buy', 'Rent', 'Off Plan', 'Commercial', 'Contact', 'Team', 'News'].map((item) => (
-                        <Text
-                            key={item}
-                            className="text-white font-semibold text-[15px] cursor-pointer hover:text-white/80 transition-colors"
-                        >
-                            {item}
-                        </Text>
-                    ))}
-                </Flex>
-            </Box>
+//             {/* Center Links - Desktop Only */}
+//             <Box className="hidden lg:block">
+//                 <Flex className="flex w-[647px] h-[54px] bg-white/40 backdrop-blur-sm rounded-[30px] px-[28px] gap-[34px] items-center justify-center">
+//                     {['Buy', 'Rent', 'Off Plan', 'Commercial', 'Contact', 'Team', 'News'].map((item) => (
+//                         <Text
+//                             key={item}
+//                             className="text-white font-semibold text-[15px] cursor-pointer hover:text-white/80 transition-colors"
+//                         >
+//                             {item}
+//                         </Text>
+//                     ))}
+//                 </Flex>
+//             </Box>
 
-            {/* Right Actions */}
-            <Flex className="flex items-center gap-4 mr-4 md:mr-[59px]">
-                <Box as="button" className="w-[36px] h-[36px] flex items-center justify-center bg-[#D6D6D6]/20 rounded-full text-white hover:bg-white/20 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                </Box>
-                <Flex as="button" className="flex bg-green-500 text-white px-6 py-2.5 rounded-[30px] items-center gap-2 font-bold text-sm hover:bg-green-600 transition-all shadow-lg shadow-green-900/20">
-                    WhatsApp
-                </Flex>
-            </Flex>
-        </Flex>
-    </Box>
-);
+//             {/* Right Actions */}
+//             <Flex className="flex items-center gap-4 mr-4 md:mr-[59px]">
+//                 <Box as="button" className="w-[36px] h-[36px] flex items-center justify-center bg-[#D6D6D6]/20 rounded-full text-white hover:bg-white/20 transition-colors">
+//                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+//                 </Box>
+//                 <Flex as="button" className="flex bg-green-500 text-white px-6 py-2.5 rounded-[30px] items-center gap-2 font-bold text-sm hover:bg-green-600 transition-all shadow-lg shadow-green-900/20">
+//                     WhatsApp
+//                 </Flex>
+//             </Flex>
+//         </Flex>
+//     </Box>
+// );
 
 const SearchBar = () => {
     const [activeTab, setActiveTab] = useState('Rent');
@@ -128,7 +128,7 @@ export const HeroSection = () => {
             <Flex
                 className="flex relative z-10 w-full h-full px-4 md:px-8 lg:px-16 flex-col justify-center items-start"
             >
-                <Navbar />
+                {/* <Navbar /> */}
 
                 <Box className="max-w-6xl w-full pl-4 md:pl-[60px] lg:pl-[125px]">
 
